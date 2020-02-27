@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/27 14:56:34 by ihwang            #+#    #+#             */
-/*   Updated: 2019/10/27 15:51:49 by ihwang           ###   ########.fr       */
+/*   Created: 2020/02/21 21:02:50 by ihwang            #+#    #+#             */
+/*   Updated: 2020/02/22 12:33:28 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strjoin(char const *s1, char const *s2)
+unsigned long		ft_nbrlen(int nb)
 {
-	char *fresh;
+	unsigned long	len;
 
-	fresh = (char*)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	if (!fresh)
-		return (NULL);
-	ft_strcpy(fresh, s1);
-	fresh = (ft_strcat(fresh, s2));
-	return (fresh);
+	len = 0;
+	if (!nb)
+		return (1);
+	else if (nb < 0)
+		len++;
+	while (nb)
+	{
+		nb = nb / 10;
+		len++;
+	}
+	return (len);
 }
