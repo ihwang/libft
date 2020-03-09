@@ -6,11 +6,11 @@
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 15:02:35 by ihwang            #+#    #+#             */
-/*   Updated: 2019/10/28 12:45:26 by ihwang           ###   ########.fr       */
+/*   Updated: 2020/02/28 00:59:52 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {

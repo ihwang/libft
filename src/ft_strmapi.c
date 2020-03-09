@@ -6,11 +6,11 @@
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 12:32:05 by ihwang            #+#    #+#             */
-/*   Updated: 2019/10/28 18:22:52 by ihwang           ###   ########.fr       */
+/*   Updated: 2020/02/28 00:59:46 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

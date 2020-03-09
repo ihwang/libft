@@ -6,9 +6,11 @@
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 21:02:50 by ihwang            #+#    #+#             */
-/*   Updated: 2020/02/22 12:33:28 by tango            ###   ########.fr       */
+/*   Updated: 2020/02/28 01:02:21 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 unsigned long		ft_nbrlen(int nb)
 {

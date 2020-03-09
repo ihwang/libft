@@ -6,11 +6,11 @@
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/27 14:57:47 by ihwang            #+#    #+#             */
-/*   Updated: 2019/10/27 15:52:27 by ihwang           ###   ########.fr       */
+/*   Updated: 2020/02/28 01:00:05 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {

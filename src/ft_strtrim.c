@@ -6,11 +6,11 @@
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/27 15:05:34 by ihwang            #+#    #+#             */
-/*   Updated: 2019/10/28 12:14:56 by ihwang           ###   ########.fr       */
+/*   Updated: 2020/02/28 01:00:21 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static int			is_white(char c)
 {

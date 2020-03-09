@@ -6,7 +6,7 @@
 #    By: ihwang <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/27 19:29:47 by ihwang            #+#    #+#              #
-#    Updated: 2020/02/27 23:03:11 by tango            ###   ########.fr        #
+#    Updated: 2020/02/29 01:25:14 by tango            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,22 +27,28 @@ SRCS_NAME = ft_atoi.c ft_bzero.c ft_isalnum.c \
 			ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlen.c ft_strmap.c \
 			ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c \
 			ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
-			ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
+			ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c \
+			get_next_line.c ft_strstr_e.c ft_strlst_del.c \
+
+
+OBJS_NAME = $(SRCS_NAME:.c=.o)
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
-OBJS = $(addprefix $(OBJS_PATH), $(SRCS_NAME:.c=.o))
+OBJS = $(addprefix $(OBJS_PATH), $(OBJS_NAME))
+
+FLAGS = -Wall -Werror -Wextra
 
 .PHONY: all, clean, fclean, re
 
 all: $(NAME)
 
-$(NAME): $(OBJS) include/libft.h
-	@ar rc $@ $<
+$(NAME): $(OBJS) includes/libft.h
+	@ar rc $(NAME) $(OBJS)
 	@ranlib $@
 
-$(OBJS): $(SRCS)
+$(OBJS_PATH)%.o: $(SRCS_PATH)%.c
 	@mkdir -p obj/
-	@gcc -Wall -Wextra -Werror -I include -c $< -o $@
+	@gcc $(FLAGS) -I includes -c $< -o $@
 
 clean:
 	@/bin/rm -rf obj/

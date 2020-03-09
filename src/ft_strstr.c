@@ -6,11 +6,11 @@
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 15:06:21 by ihwang            #+#    #+#             */
-/*   Updated: 2019/10/28 17:36:27 by ihwang           ###   ########.fr       */
+/*   Updated: 2020/02/28 01:00:17 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {

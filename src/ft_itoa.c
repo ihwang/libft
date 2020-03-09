@@ -6,11 +6,11 @@
 /*   By: tango <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 20:57:16 by tango             #+#    #+#             */
-/*   Updated: 2020/02/27 21:01:02 by tango            ###   ########.fr       */
+/*   Updated: 2020/02/28 00:56:52 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static void		init_str(char *str, size_t n_size)
 {

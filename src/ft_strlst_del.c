@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_strlst_del.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: tango <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/27 15:04:27 by ihwang            #+#    #+#             */
-/*   Updated: 2020/02/28 01:00:19 by tango            ###   ########.fr       */
+/*   Created: 2020/02/28 22:01:34 by tango             #+#    #+#             */
+/*   Updated: 2020/02/28 22:02:37 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char		*ft_strsub(char const *s, unsigned int start, size_t len)
+void		ft_strlst_del(char ***target, int nb)
 {
-	char	*fresh;
-	char	*c_fresh;
-
-	fresh = (char*)malloc(len + 1);
-	if (!fresh)
-		return (NULL);
-	c_fresh = fresh;
-	while (len-- > 0)
-		*(c_fresh++) = s[start++];
-	*c_fresh = '\0';
-	return (fresh);
+	while (0 <= --nb)
+		ft_strdel(&(target[0][nb]));
+	free(*target);
+	*target = NULL;
 }

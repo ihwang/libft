@@ -6,11 +6,11 @@
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 10:41:23 by ihwang            #+#    #+#             */
-/*   Updated: 2019/10/27 19:43:04 by ihwang           ###   ########.fr       */
+/*   Updated: 2020/02/28 00:57:34 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 void					*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

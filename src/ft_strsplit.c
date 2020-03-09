@@ -6,11 +6,11 @@
 /*   By: ihwang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/27 15:06:24 by ihwang            #+#    #+#             */
-/*   Updated: 2019/10/27 15:52:47 by ihwang           ###   ########.fr       */
+/*   Updated: 2020/02/28 01:00:15 by tango            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static char		*trimming(char const *s, char c, int count_flag)
 {
