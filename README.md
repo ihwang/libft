@@ -1,5 +1,9 @@
 # Libft
-The first 42 individual project
-## What is libft?
-Libft is C static library that contains standard c functions re-created and extra functions optimised for user by oneself.
-This project has been expanding to meet the needs of user to date.
+The very first 42 school project
+
+## Description
+Libft is basically a C static library that contains a set of re-coded standard c functions.
+
+During the study, students are guided to create own libft that provides, by default, standard c functions.
+
+The library is meant to expand as the students need, therefore serves for various other school projects.
